@@ -1,0 +1,4 @@
+sudo docker kill tf_cont
+sleep 1
+sudo nvidia-docker run -it --rm -p 8888:8888 -p 6006:6006 --name tf_cont -d -v ~/Desktop/156/Final\ Project/notebooks:/notebooks tf 
+
