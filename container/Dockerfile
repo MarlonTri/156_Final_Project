@@ -13,6 +13,8 @@ RUN pip3 install keras --no-deps
 RUN pip3 install keras_applications --no-deps
 RUN pip3 install keras_preprocessing --no-deps
 RUN pip3 install statsmodels
+RUN pip3 install tqdm 
+RUN pip3 install tabulate
 RUN ["mkdir", "notebooks"]
 COPY jupyter_notebook_config.py /root/.jupyter/
 COPY run_jupyter.sh /
